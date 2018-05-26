@@ -10,19 +10,6 @@ class Mahasiswa extends CI_Controller {
         $this->load->model('Mahasiswa_model');
     }
 
-    // public function index()
-    // {
-
-
-    //     $mahasiswa = $this->Mahasiswa_model->list();
-
-    //     $data = [
-    //                 'title' => 'Pemrograman Web Framework :: Data Mahasiswa',
-    //                 'mahasiswa' => $mahasiswa,
-    //             ];
-    //     $this->load->view('mahasiswa/index', $data);
-    // }
-
     public function create($error='')
     {
         $matakuliah = $this->Matakuliah_model->list();
